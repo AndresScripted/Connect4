@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/App.css';
-import '../components/Question.jsx'
+import Question from './Question.jsx';
 // import components
 
 class App extends Component {
@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="app">
         Trivia!
-        
+        <Question Question="Question" Answer="no" />
       </div>
     );
   }
