@@ -8,8 +8,8 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        Trivia!
-        <Question Question="Question" Answer="no" />
+        <div id="title">Kahoot but more Fustrating! :D</div>
+        <div id="questionbox"><Question Question="Question" Answer="no" /></div>
       </div>
     );
   }

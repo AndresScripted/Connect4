@@ -7,4 +7,20 @@ body {
   text-align: center;
 }
 
+#title {
+  font-size: 100px;
+  font-family: 'Permanent Marker', cursive;
+}
+body {
+  background-color: lightgreen;
+}
+button {
+  height: 100px;
+  width: 200px;
+  margin: 25px;
+}
+#questionbox {
+  display: flex;
+  justify-content: center;
+}
 

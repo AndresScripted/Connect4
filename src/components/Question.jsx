@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import '../css/Question.css';
 // import components
-
-
-class Question extends Component 
   
 class Question extends Component {
 constructor(props){
@@ -30,5 +27,11 @@ constructor(props){
     );
   }
 }
-
+class QuestionConstructor {
+    constructor (color, shape, correct) {
+      this.color = color;
+      this.shape = shape;
+      this.correct = correct;
+    }
+}
 export default Question;
