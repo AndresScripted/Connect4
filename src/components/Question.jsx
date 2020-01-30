@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import components
 
 
-class Question extends Component {
+class Question extends Component 
   
   render() {
     return (
