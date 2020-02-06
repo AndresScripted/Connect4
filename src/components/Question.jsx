@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
 import '../css/Question.css';
+import {buildFirebase} from '../clients/firebase.js';
 // import components
-  
+var database = buildFirebase();
+var databaseRef = database.ref("/questions");
+databaseRef.once("value").then(function(data) {
+ const questions = data.val();
+// Do something with the questions
+console.log(questions);
+});
 class Question extends Component {
 constructor(props){
   super(props);
@@ -34,4 +41,5 @@ class QuestionConstructor {
       this.correct = correct;
     }
 }
+
 export default Question;
