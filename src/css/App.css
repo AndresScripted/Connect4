@@ -19,8 +19,5 @@ button {
   width: 200px;
   margin: 25px;
 }
-#questionbox {
-  display: flex;
-  justify-content: center;
-}
+
 

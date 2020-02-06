@@ -9,7 +9,8 @@ class App extends Component {
     return (
       <div className="app">
         <div id="title">Kahoot but more Fustrating! :D</div>
-        <div id="questionbox"><Question Question="Question" Answer="no" /></div>
+        <div id="questionbox">
+          <Question Question="Question" /></div>
       </div>
     );
   }

@@ -5,10 +5,11 @@ import '../css/Question.css';
 class Question extends Component {
 constructor(props){
   super(props);
-  this.state = { ask: "dontShow"} 
+  this.state = { ask: "show"} 
 }
   WhenClick(){;
-    this.setState({ ask: "show"});
+    this.setState({ ask: "dontShow"});
+    console.log(this.state.ask);
   }
 
 
@@ -16,13 +17,12 @@ constructor(props){
     return (
       <div>
          <h1> {this.props.question} </h1>
-         <ul>
-            <button class={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Answer} </button>
-            <button class={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Answer} </button>
-            <button class={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Answer} </button>
-            <button class={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Answer} </button>
+         <ul id="container">
+            <button class={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Question} </button>
+            <button class={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Question} </button>
+            <button class={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Question} </button>
+            <button class={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Question} </button>
          </ul>
-         <button class={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Reset} </button>
       </div>
     );
   }
