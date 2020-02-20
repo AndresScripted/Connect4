@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../css/Question.css';
-import {buildFirebase} from '../clients/firebase.js';
 // import components
 
 // Do something with the questions
@@ -17,15 +16,10 @@ constructor(props){
 
 
   render() {
-    var database = buildFirebase();
-    var databaseRef = database.ref("/questions");
-    databaseRef.once("value").then(function(data) {
-      const questions = data.val();
-      console.log(questions);
-    });
+    
     return (
       <div>
-         <h1> {this.props.question} </h1>
+         <h1> {this.props.Question.question_text} </h1>
          <ul id="container">
             <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Question} </button>
             <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Question} </button>
