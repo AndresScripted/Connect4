@@ -14,6 +14,7 @@ class App extends Component {
       this.state = {
          factNumber: 0
        }
+       this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
     this.setState({factNumber:this.state.factNumber+1});
