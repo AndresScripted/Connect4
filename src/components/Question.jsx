@@ -19,14 +19,14 @@ constructor(props){
     
     return (
       <div>
-         <h1> {this.props.Question.question_text} </h1>
+         <h1> {this.props.questionText} </h1>
          <ul id="container">
-            <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Question} </button>
-            <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Question} </button>
-            <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Question} </button>
-            <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Question} </button>
+            <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Choices[0]} </button>
+            <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Choices[1]} </button>
+            <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Choices[2]} </button>
+            <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Choices[3]} </button>
          </ul>
-      </div>
+               </div>
     );
   }
 }

@@ -15,13 +15,19 @@ class App extends Component {
          factNumber: 0
        }
   }
+  handleClick() {
+    this.setState({factNumber:this.state.factNumber+1});
+  }
   render() {
     return (
       <div className="app">
         <div id="title">Kahoot but more Fustrating! :D</div>
         <div id="questionbox">
-          <Question Question={this.props.Questions[this.state.factNumber]} /></div>
+          <Question questionText={this.props.Questions[this.state.factNumber].question_text} Choices={this.props.Questions[this.state.factNumber].choices} />
+          </div>
+      <button className="nextButton" onClick={this.handleClick}>Next Question :D</button>
       </div>
+
     );
   }
 }
