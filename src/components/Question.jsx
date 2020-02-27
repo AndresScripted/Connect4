@@ -13,6 +13,7 @@ constructor(props){
     this.setState({ ask: "dontShow"});
     if (this.props.Choices[0] === this.props.Choices[this.props.CorrectIndex]){
       alert("yay good job!");
+      this.setState({score:this.state.score + 1});
     }
     else {
       alert("zoinks scoob, thats wrong");
@@ -22,6 +23,7 @@ constructor(props){
     this.setState({ ask: "dontShow"});
     if (this.props.Choices[1] === this.props.Choices[this.props.CorrectIndex]){
       alert("yay good job!");
+      this.setState({score:this.state.score + 1});
     }
     else {
       alert("zoinks scoob, thats wrong");
@@ -31,6 +33,7 @@ constructor(props){
     this.setState({ ask: "dontShow"});
     if (this.props.Choices[2] === this.props.Choices[this.props.CorrectIndex]){
       alert("yay good job!");
+      this.setState({score:this.state.score + 1});
     }
     else {
       alert("zoinks scoob, thats wrong");
@@ -40,6 +43,7 @@ constructor(props){
     this.setState({ ask: "dontShow"});
     if (this.props.Choices[3] === this.props.Choices[this.props.CorrectIndex]){
       alert("yay good job!");
+      this.setState({score:this.state.score + 1});
     }
     else {
       alert("zoinks scoob, thats wrong");
