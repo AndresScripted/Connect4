@@ -9,10 +9,10 @@ constructor(props){
   super(props);
   this.state = { ask: "show"} 
 }
-  WhenClick(){;
+  WhenClick0(){;
     this.setState({ ask: "dontShow"});
-    if (this.props.Choices[3] === this.props.Choices[this.props.CorrectIndex]){
-      console.log(this.props.Choices[3]);
+    if (this.props.Choices[0] === this.props.Choices[this.props.CorrectIndex]){
+      alert("yay good job!");
     }
   }
 
@@ -23,7 +23,7 @@ constructor(props){
       <div>
          <h1> {this.props.questionText} </h1>
          <ul id="container">
-            <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Choices[0]} </button>
+            <button className={this.state.ask} onClick={() => this.WhenClick0()}> {this.props.Choices[0]} </button>
             <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Choices[1]} </button>
             <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Choices[2]} </button>
             <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Choices[3]} </button>
