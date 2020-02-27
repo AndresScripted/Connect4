@@ -14,6 +14,36 @@ constructor(props){
     if (this.props.Choices[0] === this.props.Choices[this.props.CorrectIndex]){
       alert("yay good job!");
     }
+    else {
+      alert("zoinks scoob, thats wrong");
+    }
+  }
+  WhenClick1(){;
+    this.setState({ ask: "dontShow"});
+    if (this.props.Choices[1] === this.props.Choices[this.props.CorrectIndex]){
+      alert("yay good job!");
+    }
+    else {
+      alert("zoinks scoob, thats wrong");
+    }
+  }
+  WhenClick2(){;
+    this.setState({ ask: "dontShow"});
+    if (this.props.Choices[2] === this.props.Choices[this.props.CorrectIndex]){
+      alert("yay good job!");
+    }
+    else {
+      alert("zoinks scoob, thats wrong");
+    }
+  }
+  WhenClick3(){;
+    this.setState({ ask: "dontShow"});
+    if (this.props.Choices[3] === this.props.Choices[this.props.CorrectIndex]){
+      alert("yay good job!");
+    }
+    else {
+      alert("zoinks scoob, thats wrong");
+    }
   }
 
 
@@ -24,9 +54,9 @@ constructor(props){
          <h1> {this.props.questionText} </h1>
          <ul id="container">
             <button className={this.state.ask} onClick={() => this.WhenClick0()}> {this.props.Choices[0]} </button>
-            <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Choices[1]} </button>
-            <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Choices[2]} </button>
-            <button className={this.state.ask} onClick={() => this.WhenClick()}> {this.props.Choices[3]} </button>
+            <button className={this.state.ask} onClick={() => this.WhenClick1()}> {this.props.Choices[1]} </button>
+            <button className={this.state.ask} onClick={() => this.WhenClick2()}> {this.props.Choices[2]} </button>
+            <button className={this.state.ask} onClick={() => this.WhenClick3()}> {this.props.Choices[3]} </button>
          </ul>
                </div>
     );
