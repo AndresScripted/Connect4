@@ -11,7 +11,9 @@ constructor(props){
 }
   WhenClick(){;
     this.setState({ ask: "dontShow"});
-    console.log(this.state.ask);
+    if (this.props.Choices[3] === this.props.Choices[this.props.CorrectIndex]){
+      console.log(this.props.Choices[3]);
+    }
   }
 
 
