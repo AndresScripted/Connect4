@@ -7,7 +7,9 @@ import '../css/Question.css';
 class Question extends Component {
 constructor(props){
   super(props);
-  
+  this.state = {
+    score: 0
+  }
 }
   WhenClick0(){;
     this.setState({ ask: "dontShow"});
