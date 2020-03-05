@@ -60,9 +60,9 @@ constructor(props){
          <h1> {this.props.questionText} </h1>
          <ul id="container">
             <button  onClick={() => this.WhenClick0()}> {this.props.Choices[0]} </button>
-            <button  onClick={() => this.WhenClick()}> {this.props.Choices[1]} </button>
-            <button  onClick={() => this.WhenClick()}> {this.props.Choices[2]} </button>
-            <button  onClick={() => this.WhenClick()}> {this.props.Choices[3]} </button>
+            <button  onClick={() => this.WhenClick1()}> {this.props.Choices[1]} </button>
+            <button  onClick={() => this.WhenClick2()}> {this.props.Choices[2]} </button>
+            <button  onClick={() => this.WhenClick3()}> {this.props.Choices[3]} </button>
 
          </ul>
                </div>
