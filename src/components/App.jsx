@@ -5,17 +5,17 @@ import '../css/App.css';
 class App extends Component {
   constructor(props) {
     super(props);
+
   }
     
 
   render() {
     return (
-      <div className="app">
-        
-      </div>
-
+        <div className="app">
+          
+        </div>
     );
   }
 }
 
-export default App;
+export default Board;
